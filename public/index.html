@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geraldine Cabaya | Portfolio</title>
+    <meta name="description" content="Geraldine Cabaya — Database &amp; QA Specialist portfolio.">
+    <link rel="icon" type="image/jpeg" href="/profile_icon.jpg">
+    <!-- Tailwind CSS (CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased font-sans">
+
+    <main>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Mono:wght@400;500&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        html { scroll-behavior: smooth; }
+        #portfolio { font-family: 'Public Sans', ui-sans-serif, system-ui, sans-serif; }
+        #portfolio .font-display { font-family: 'Bricolage Grotesque', ui-sans-serif, system-ui, sans-serif; }
+        #portfolio .font-schema { font-family: 'IBM Plex Mono', ui-monospace, Menlo, Consolas, monospace; }
+
+        /* Blueprint grid behind the hero */
+        #portfolio .blueprint {
+            background-image:
+                linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        /* One orchestrated moment: schema rows fill in on page load */
+        @keyframes rowIn {
+            from { opacity: 0; transform: translateY(6px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        #portfolio .row-in { opacity: 0; animation: rowIn .5s ease forwards; }
+
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            #portfolio .row-in { opacity: 1; animation: none; }
+        }
+    </style>
+
+    <div id="portfolio" class="bg-slate-50 text-slate-700 antialiased">
+
+        <!-- 1. Hero Section -->
+        <section id="top" class="blueprint bg-teal-950 text-white">
+
+            <!-- Navigation -->
+            <header class="max-w-6xl mx-auto px-6 pt-6 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+                <a href="#top" class="font-display text-lg font-bold"></a>
+                <nav class="flex flex-wrap gap-x-6 gap-y-1 text-sm text-teal-100" aria-label="Main">
+                    <a href="#about" class="hover:text-amber-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 rounded">About</a>
+                    <a href="#projects" class="hover:text-amber-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 rounded">Projects</a>
+                    <a href="#certificates" class="hover:text-amber-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 rounded">Certificates</a>
+                    <a href="#contact" class="hover:text-amber-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-amber-300 rounded">Contact</a>
+                </nav>
+            </header>
+
+            <div class="max-w-6xl mx-auto px-6 py-16 md:py-24 grid grid-cols-1 md:grid-cols-12 gap-14 items-center">
+
+                <!-- Left Content Column -->
+                <div class="md:col-span-7 text-left">
+                    <h1 class="font-display text-5xl sm:text-6xl lg:text-7xl font-bold leading-[1.05] tracking-tight">
+                        Geraldine Cabaya
+                    </h1>
+
+                    <h2 class="font-display mt-4 text-2xl sm:text-3xl font-medium text-amber-300">
+                        Database &amp; QA Specialist
+                    </h2>
+
+                    <p class="mt-6 text-lg text-teal-50/90 leading-relaxed max-w-xl">
+                        I specialize in Quality Assurance, database management, and designing robust schemas like ERDs to ensure system integrity and flawless execution.
+                    </p>
+
+                    <div class="mt-10 flex flex-wrap gap-4">
+                        <a href="/files/Rica_Mae_Rubin_Application.zip"
+                           download="Rica_Mae_Rubin_Application.zip"
+                           class="inline-block bg-amber-400 text-teal-950 px-8 py-3.5 rounded font-semibold hover:bg-amber-300 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-950 focus-visible:ring-amber-300">
+                            Hire Me
+                        </a>
+                        <a href="#projects"
+                           class="inline-block border border-teal-300/60 text-white px-8 py-3.5 rounded font-semibold hover:border-amber-300 hover:text-amber-300 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-950 focus-visible:ring-amber-300">
+                            Projects
+                        </a>
+                    </div>
+                </div>
+
+              <!-- Right Column: profile picture -->
+<div class="md:col-span-5 flex justify-center md:justify-end">
+    <div class="w-64 h-64 sm:w-50 sm:h-50 aspect-square rounded-full overflow-hidden border-4 border-white bg-teal-100 shadow-[10px_10px_0_0_#fbbf24]">
+        <img src="/images/Profile.png" alt="Profile Picture" class="w-full h-full object-cover">
+    </div>
+</div>
+
+                    
+                    </div>
+        </section>
+
+        <!-- 2. About Me Section -->
+        <section id="about" class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+            <h2 class="font-display text-3xl sm:text-4xl font-bold text-teal-950">About Me</h2>
+
+            <p class="font-display mt-8 text-2xl sm:text-3xl font-medium leading-snug text-slate-800 max-w-3xl">
+I am a detail-oriented and hardworking professional who thrives on ensuring system quality and data integrity.            </p>
+            <p class="mt-6 text-lg leading-relaxed text-slate-600 max-w-2xl">
+On our system development project, I was the QA tester: I tested features, documented bugs, and checked that fixes worked before release. My school projects taught me to solve problems, communicate clearly, and work well in a team. Now I’m looking for a company where I can learn quickly and gain real industry experience.            </p>
+
+        
+        </section>
+
+        <!-- 3. Projects Showcase Section -->
+        <section id="projects" class="bg-white border-y border-slate-200">
+            <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-teal-950">Featured Projects</h2>
+
+                <div class="mt-14 space-y-14">
+                        <article class="bg-white border-2 border-teal-950 rounded-lg overflow-hidden shadow-[6px_6px_0_0_#0f766e]">
+                            <div class="font-schema text-xs flex justify-between bg-teal-950 text-teal-100 px-4 py-2">
+                                <span>Projects</span>
+                            </div>
+                            <div class="md:flex">
+                                <div class="md:w-1/2 bg-slate-100 flex items-center justify-center">
+                                    <img src="/images/projects/project.png" alt="NutriTrack" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <div class="p-6 md:p-10 flex flex-col justify-center md:w-1/2">
+                                    <h3 class="font-display text-2xl font-bold text-teal-950">NutriTrack</h3>
+                                    <p class="mt-3 text-slate-600 leading-relaxed">Developed a web-based nutritional tracker for daycare students utilizing data visualization and predictive analytics via Multiple Linear Regression. Architected relational database schemas in PostgreSQL and generated predictive health models to ensure data precision, analytical integrity, and reliable user reporting.</p>
+                                    <div class="flex flex-wrap gap-2 mt-6">
+                                        <span class="font-schema bg-teal-50 text-teal-800 border border-teal-200 text-xs px-2.5 py-1 rounded">Laravel</span>
+                                        <span class="font-schema bg-teal-50 text-teal-800 border border-teal-200 text-xs px-2.5 py-1 rounded">PostgreSQL</span>
+                                        <span class="font-schema bg-teal-50 text-teal-800 border border-teal-200 text-xs px-2.5 py-1 rounded">JavaScript</span>
+                                        <span class="font-schema bg-teal-50 text-teal-800 border border-teal-200 text-xs px-2.5 py-1 rounded">JSCharts</span>
+                                        <span class="font-schema bg-teal-50 text-teal-800 border border-teal-200 text-xs px-2.5 py-1 rounded">Bootstrap</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="bg-white border-2 border-teal-950 rounded-lg overflow-hidden shadow-[6px_6px_0_0_#0f766e]">
+                            <div class="font-schema text-xs flex justify-between bg-teal-950 text-teal-100 px-4 py-2">
+                                <span>Projects</span>
+                            </div>
+                            <div class="md:flex md:flex-row-reverse">
+                                <div class="md:w-1/2 bg-slate-100 flex items-center justify-center">
+                                    <img src="/images/projects/project1.0.png" alt="Attendance Management System" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <div class="p-6 md:p-10 flex flex-col justify-center md:w-1/2">
+                                    <h3 class="font-display text-2xl font-bold text-teal-950">Attendance Management System</h3>
+                                    <p class="mt-3 text-slate-600 leading-relaxed">Developed a desktop Attendance Management System is a software solution designed to automate and streamline the process of tracking and recording employee attendance. It helps organizations maintain accurate attendance records in real-time, reducing manual errors and administrative workload.</p>
+                                    <div class="flex flex-wrap gap-2 mt-6">
+                                        <span class="font-schema bg-teal-50 text-teal-800 border border-teal-200 text-xs px-2.5 py-1 rounded">C#</span>
+                                        <span class="font-schema bg-teal-50 text-teal-800 border border-teal-200 text-xs px-2.5 py-1 rounded">VB.NET</span>
+                                        <span class="font-schema bg-teal-50 text-teal-800 border border-teal-200 text-xs px-2.5 py-1 rounded">MySQL</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="bg-white border-2 border-teal-950 rounded-lg overflow-hidden shadow-[6px_6px_0_0_#0f766e]">
+                            <div class="font-schema text-xs flex justify-between bg-teal-950 text-teal-100 px-4 py-2">
+                                <span>Projects</span>
+                            </div>
+                            <div class="md:flex">
+                                <div class="md:w-1/2 bg-slate-100 flex items-center justify-center">
+                                    <img src="/images/projects/project2.png" alt="Boadding House" class="w-full h-full object-cover" loading="lazy">
+                                </div>
+                                <div class="p-6 md:p-10 flex flex-col justify-center md:w-1/2">
+                                    <h3 class="font-display text-2xl font-bold text-teal-950">Boadding House</h3>
+                                    <p class="mt-3 text-slate-600 leading-relaxed">Developed an mobile application for boarding house management, enabling efficient room allocation, tenant tracking, and payment processing. The app provides a user-friendly interface for both landlords and tenants, enhancing communication and operational efficiency.</p>
+                                    <div class="flex flex-wrap gap-2 mt-6">
+                                        <span class="font-schema bg-teal-50 text-teal-800 border border-teal-200 text-xs px-2.5 py-1 rounded">Flutter</span>
+                                        <span class="font-schema bg-teal-50 text-teal-800 border border-teal-200 text-xs px-2.5 py-1 rounded">Firebase</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. Certificates Section -->
+        <section id="certificates" class="bg-teal-50">
+            <div class="max-w-6xl mx-auto px-6 py-20 md:py-28">
+                <h2 class="font-display text-3xl sm:text-4xl font-bold text-teal-950">Certificates &amp; Credentials</h2>
+
+                <div class="mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                        <article class="flex flex-col bg-white border-2 border-teal-950 rounded-lg overflow-hidden shadow-[5px_5px_0_0_#fbbf24]">
+                            <div class="h-1.5 bg-amber-400"></div>
+                            <div class="aspect-[4/3] bg-slate-100 border-b border-slate-200">
+                                <img src="/images/certificates/Database.jpg" alt="Databases" class="w-full h-full object-contain" loading="lazy">
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <h3 class="font-display text-xl font-bold text-teal-950">Databases</h3>
+                                <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">Certified IT Specialist in Databases, verifying skills in database management, SQL, and data integrity.</p>
+                                <p class="mt-5 flex items-center gap-2 text-sm font-semibold text-teal-800">
+                                    <span class="inline-block w-2 h-2 rounded-full bg-amber-400" aria-hidden="true"></span>
+                                    Certiport / Pearson VUE
+                                </p>
+                            </div>
+                        </article>
+                        <article class="flex flex-col bg-white border-2 border-teal-950 rounded-lg overflow-hidden shadow-[5px_5px_0_0_#fbbf24]">
+                            <div class="h-1.5 bg-amber-400"></div>
+                            <div class="aspect-[4/3] bg-slate-100 border-b border-slate-200">
+                                <img src="/images/certificates/Networking.jpg" alt="Network Security" class="w-full h-full object-contain" loading="lazy">
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <h3 class="font-display text-xl font-bold text-teal-950">Network Security</h3>
+                                <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">Certified IT Specialist in Network Security, focusing on safeguarding network infrastructures.</p>
+                                <p class="mt-5 flex items-center gap-2 text-sm font-semibold text-teal-800">
+                                    <span class="inline-block w-2 h-2 rounded-full bg-amber-400" aria-hidden="true"></span>
+                                    Certiport / Pearson VUE
+                                </p>
+                            </div>
+                        </article>
+                        <article class="flex flex-col bg-white border-2 border-teal-950 rounded-lg overflow-hidden shadow-[5px_5px_0_0_#fbbf24]">
+                            <div class="h-1.5 bg-amber-400"></div>
+                            <div class="aspect-[4/3] bg-slate-100 border-b border-slate-200">
+                                <img src="/images/certificates/CyberSecurity.jpg" alt="Cybersecurity" class="w-full h-full object-contain" loading="lazy">
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <h3 class="font-display text-xl font-bold text-teal-950">Cybersecurity</h3>
+                                <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">Certified IT Specialist in Cybersecurity, covering threat analysis, security controls, and defense strategies.</p>
+                                <p class="mt-5 flex items-center gap-2 text-sm font-semibold text-teal-800">
+                                    <span class="inline-block w-2 h-2 rounded-full bg-amber-400" aria-hidden="true"></span>
+                                    Certiport / Pearson VUE
+                                </p>
+                            </div>
+                        </article>
+                        <article class="flex flex-col bg-white border-2 border-teal-950 rounded-lg overflow-hidden shadow-[5px_5px_0_0_#fbbf24]">
+                            <div class="h-1.5 bg-amber-400"></div>
+                            <div class="aspect-[4/3] bg-slate-100 border-b border-slate-200">
+                                <img src="/images/certificates/HTML.jpg" alt="HTML and CSS" class="w-full h-full object-contain" loading="lazy">
+                            </div>
+                            <div class="p-6 flex flex-col flex-1">
+                                <h3 class="font-display text-xl font-bold text-teal-950">HTML and CSS</h3>
+                                <p class="mt-2 text-sm text-slate-600 leading-relaxed flex-1">Certified IT Specialist in HTML and CSS, validating core web development and structural design principles.</p>
+                                <p class="mt-5 flex items-center gap-2 text-sm font-semibold text-teal-800">
+                                    <span class="inline-block w-2 h-2 rounded-full bg-amber-400" aria-hidden="true"></span>
+                                    Certiport / Pearson VUE
+                                </p>
+                            </div>
+                        </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact Section -->
+        <section id="contact" class="blueprint bg-teal-950 text-white">
+            <div class="max-w-6xl mx-auto px-6 py-20 md:py-28 grid grid-cols-1 md:grid-cols-12 gap-12">
+
+                <div class="md:col-span-5">
+                    <h2 class="font-display text-3xl sm:text-4xl font-bold">Get In Touch</h2>
+                <p class="mt-5 text-lg text-teal-50/90 leading-relaxed max-w-sm">
+                    Feel free to reach out about collaborations or opportunities in QA testing, and database work. I'll get back to you.
+                </p>
+                </div>
+
+                <div class="md:col-span-7">
+
+                    <div id="contact-status" role="status" aria-live="polite" class="hidden mb-6 p-4 rounded-md text-left"></div>
+
+                    <div class="bg-white text-slate-800 rounded-lg overflow-hidden shadow-[8px_8px_0_0_#fbbf24]">
+                        <div class="font-schema text-xs flex justify-between bg-teal-700 text-white px-5 py-3">
+                            <span>Contact</span>
+                        </div>
+
+                        <!-- Contact Form -->
+                        <form id="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="p-6 sm:p-8 space-y-5 text-left">
+                            <input type="hidden" name="form-name" value="contact">
+                            <input type="hidden" name="subject" value="New portfolio message (%{submissionId})">
+                            <p class="hidden"><label>Don’t fill this out: <input name="bot-field"></label></p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+    <div>
+        <label for="name" class="block text-sm font-medium text-slate-700">Name</label>
+        <input id="name" type="text" name="name" required
+               placeholder="Enter your name"
+               class="mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600">
+    </div>
+    <div>
+        <label for="email" class="block text-sm font-medium text-slate-700">Email</label>
+        <input id="email" type="email" name="email" required
+               placeholder="Enter your email"
+               class="mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600">
+    </div>
+</div>
+<div>
+    <label for="message" class="block text-sm font-medium text-slate-700">Message</label>
+    <textarea id="message" name="message" rows="5" required
+              placeholder="Enter your message"
+              class="mt-1 block w-full rounded-md border border-slate-300 bg-white px-3 py-2 text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-600 focus:border-teal-600"></textarea>
+</div>
+                            <button type="submit"
+                                    class="w-full bg-teal-700 text-white px-6 py-3 rounded font-semibold hover:bg-teal-800 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-teal-600">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+    </main>
+
+    <footer class="bg-white border-t border-gray-100 py-6 text-center text-sm text-gray-500">
+        <p>&copy; <span id="year">2026</span> My Portfolio.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const form = document.getElementById('contact-form');
+        const status = document.getElementById('contact-status');
+        const show = (ok, msg) => {
+            status.textContent = msg;
+            status.className = 'mb-6 p-4 rounded-md text-left ' + (ok
+                ? 'bg-amber-100 border border-amber-300 text-teal-950'
+                : 'bg-red-50 border border-red-200 text-red-700');
+        };
+        form.addEventListener('submit', async (event) => {
+            event.preventDefault();
+            const button = form.querySelector('button[type="submit"]');
+            button.disabled = true;
+            try {
+                const res = await fetch('/', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: new URLSearchParams(new FormData(form)).toString(),
+                });
+                if (!res.ok) throw new Error(String(res.status));
+                form.reset();
+                show(true, 'Thank you! Your message has been sent successfully.');
+            } catch (err) {
+                show(false, 'Sorry, your message could not be sent. Please try again later.');
+            } finally {
+                button.disabled = false;
+            }
+        });
+    </script>
+</body>
+</html>
