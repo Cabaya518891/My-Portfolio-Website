@@ -62,8 +62,7 @@
                     </h2>
 
                     <p class="mt-6 text-lg text-teal-50/90 leading-relaxed max-w-xl">
-                        I specialize in Quality Assurance, database management, and designing robust schemas like ERDs to ensure system integrity and flawless execution.
-                    </p>
+I specialize in Quality Assurance and database management, with a careful, detail-oriented approach to testing, documenting bugs, and keeping data integrity.                    </p>
 
                     <div class="mt-10 flex flex-wrap gap-4">
                         <a href="{{ asset('files/GERALDINE_CABAYA_Application.zip') }}"
