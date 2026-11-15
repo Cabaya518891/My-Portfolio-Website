@@ -1,0 +1,4 @@
+# Netlify cannot run PHP/Laravel, so the site is served as static HTML from public/.
+[build]
+  command = "npm run build"
+  publish = "public"
