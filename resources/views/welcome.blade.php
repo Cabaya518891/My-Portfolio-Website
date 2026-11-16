@@ -65,8 +65,8 @@
 I specialize in Quality Assurance and database management, with a careful, detail-oriented approach to testing, documenting bugs, and keeping data integrity.                    </p>
 
                     <div class="mt-10 flex flex-wrap gap-4">
-                        <a href="{{ asset('files/GERALDINE_CABAYA_Application') }}"
-                           download="GERALDINE_CABAYA_Application"
+                        <a href="{{ asset('files/GERALDINE_CABAYA_Application.zip') }}"
+                           download="GERALDINE_CABAYA_Application.zip"
                            class="inline-block bg-amber-400 text-teal-950 px-8 py-3.5 rounded font-semibold hover:bg-amber-300 transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-teal-950 focus-visible:ring-amber-300">
                             Hire Me
                         </a>
